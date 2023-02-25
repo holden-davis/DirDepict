@@ -1,4 +1,4 @@
-module github.com/holden-davis-uca/DirDepict
+module github.com/holden-davis/DirDepict
 
 go 1.20
 

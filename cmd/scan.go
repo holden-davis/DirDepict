@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/holden-davis-uca/DirDepict/util"
+	"github.com/holden-davis/DirDepict/util"
 	"github.com/spf13/cobra"
 	"os"
 	"path"
