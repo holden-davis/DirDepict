@@ -9,7 +9,7 @@ type File struct {
 	//Extension type of the file, if one exists ex. txt
 	Extension string
 	//Size of the file in bytes ex. 2342
-	Bytes int64
+	Size int64
 	//Flag to separate files from directories
 	IsDir bool
 	//A collection of file types that represent the subdirectory of the current dir

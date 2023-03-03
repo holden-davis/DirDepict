@@ -2,14 +2,15 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
 	Use: "dirdepict",
 	Run: func(cmd *cobra.Command, args []string) {
-		print("Hello World")
+		fmt.Println("Hello World!")
 	},
 }
 
