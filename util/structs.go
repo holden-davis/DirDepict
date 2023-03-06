@@ -1,5 +1,7 @@
 package util
 
+import "fmt"
+
 // Struct for holding information about a file
 type File struct {
 	//Name of the file ex. data.txt
@@ -14,4 +16,17 @@ type File struct {
 	IsDir bool
 	//A collection of file types that represent the subdirectory of the current dir
 	Sub []File
+}
+
+// Simple function to print file info
+func (file File) Print() {
+	fmt.Println("Name:          ", file.Name)
+	fmt.Println("Absolute Path: ", file.Fullpath)
+	fmt.Println("Size:          ", file.Size)
+	fmt.Println("Directory?     ", file.IsDir)
+	if file.IsDir {
+		fmt.Println("Contents Count:", len(file.Sub))
+	} else {
+		fmt.Println("Extension:     ", file.Extension)
+	}
 }
