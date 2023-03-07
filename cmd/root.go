@@ -9,9 +9,8 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use: "dirdepict",
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Hello World!")
-	},
+	Long: "CLI program to provide quick information about a filesystem",
+	Version: "1.0",
 }
 
 func Execute() {
